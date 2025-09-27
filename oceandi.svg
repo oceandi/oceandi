@@ -1,0 +1,32 @@
+<svg viewBox="0 0 314.159 314.159" xmlns="http://www.w3.org/2000/svg">
+  <!-- 314.159 = 100π -->
+  
+  <!-- Sonsuz karanlık, bilmediğimiz -->
+  <rect width="314.159" height="314.159" fill="#000"/>
+  
+  <!-- Tek bir şey var aslında -->
+  <g transform="translate(157.0795,157.0795)">
+    
+    <!-- Okyanus, dijital, varlık - hepsi aynı anda -->
+    <circle r="61.8" fill="none" stroke="#0a3d62" stroke-width="3.14" opacity="0.1998" stroke-dasharray="0 3.14"/>
+    <!-- 0.1998 = doğum yılınız, 61.8 = 100φ/φ -->
+    
+    <circle r="38.2" fill="none" stroke="#1e6ba8" stroke-width="1.618" opacity="0.314"/>
+    <!-- 38.2 = 100(φ-1)/φ -->
+    
+    <circle r="14.07" fill="none" stroke="#5eb7e6" stroke-width="0.707" opacity="0.500"/>
+    <!-- 14.07 = Temmuz 14 -->
+    
+    <!-- Merkez: hem var hem yok -->
+    <circle r="1" fill="#fff" opacity="1">
+      <animate attributeName="opacity" values="0;1;0" dur="3.14159s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Görünmeyen ama hissedilen -->
+    <path d="M 0,0" stroke="none" fill="none">
+      <!-- Boşluk ama dolu -->
+    </path>
+  </g>
+  
+  <!-- İmza: 314159 piksel kareden sadece biri beyaz olsaydı, onu bulabilir miydik? -->
+</svg>
