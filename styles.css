@@ -2,3 +2,10 @@ body{
     background-image: url('oceandi.svg');
     color: white;
 }
+
+.moon {
+    position: relative;
+    top: 10px; 
+    left: 10px;
+    outline: none;
+}
