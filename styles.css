@@ -1,11 +1,121 @@
-body{
+:root {
     background-image: url('oceandi.svg');
     color: white;
 }
 
+body {
+    margin: 0px;
+    width: 2100px;
+    height: 1300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
 .moon {
     position: relative;
-    top: 10px; 
-    left: 10px;
     outline: none;
+}
+
+.tredecim {
+    height: 1300px;
+    width: 1300px;
+    background:transparent;
+    position: relative;
+    background-size: 10%;
+}
+
+.octo {
+    height: 1300px;
+    width: 800px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-direction: column-reverse
+}
+
+.octosquare {
+    height: 800px;
+    width: 800px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quinque {
+    height: 500px;
+    width: 800px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row
+}
+
+.quinquesquare {
+    height: 500px;
+    width: 500px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tres {
+    height: 500px;
+    width: 300px;
+    background:transparent;
+    position: relative;
+}
+
+.tressquare {
+    height: 300px;
+    width: 300px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duo {
+    height: 200px;
+    width: 300px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.duosquare {
+    height: 200px;
+    width: 200px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unus {
+    height: 200px;
+    width: 100px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.unussquare {
+    height: 100px;
+    width: 100px;
+    background:transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
