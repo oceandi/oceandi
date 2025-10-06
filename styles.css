@@ -1,6 +1,7 @@
 :root {
     background-image: url('oceandi.svg');
     color: white;
+    background-size: 7%;
 }
 
 body {
@@ -118,4 +119,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#rabbit {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none; /* tıklanamaz */
+}
+
+#rabbit.visible {
+    opacity: 1;
 }

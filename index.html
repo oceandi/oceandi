@@ -20,11 +20,24 @@
                 <div class="duo">
                     <div class="duosquare"></div>
                     <div class="unus">
-                        <div class="unussquare"></div>
+                        <div class="unussquare">
+                            <div class="rabbit" id="rabbit">
+                                <model-viewer src="ori.glb"
+                                    alt="Ori Rabbit"
+                                    disable-zoom
+                                    disable-pan
+                                    camera-controls
+                                    interaction-prompt="none"
+                                    style="width: 61.8px; height: 61.8px; --model-viewer-focus-ring: 0;">
+                                </model-viewer>
+                            </div>
+                        </div>
                         <div class="unussquare">
                             <div class="moon">
-                                <model-viewer src="moon.glb"
-                                    alt="3D Model"
+                                <model-viewer 
+                                    id="moon"
+                                    src="moon.glb"
+                                    alt="Moon"
                                     camera-controls
                                     disable-zoom
                                     interaction-prompt="none"
@@ -39,5 +52,18 @@
             </div>
         </div>
     </div>
+    <script>
+        const moon = document.getElementById("moon");
+        const rabbit = document.getElementById("rabbit");
+
+        // model-viewer kendi "interaction" event’ini gönderir
+        moon.addEventListener('interaction', () => {
+        rabbit.classList.add('visible');
+        });
+
+        // Güvenlik için dokunma ve tıklama olaylarını da dinleyelim (mobilde bazen interaction geç geliyor)
+        moon.addEventListener('mousedown', () => rabbit.classList.add('visible'));
+        moon.addEventListener('touchstart', () => rabbit.classList.add('visible'));
+    </script>
 </body>
 </html>
