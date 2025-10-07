@@ -2,6 +2,9 @@
     background-image: url('oceandi.svg');
     color: white;
     background-size: 7%;
+    overflow: hidden;
+    position: fixed;
+    overscroll-behavior: none;
 }
 
 body {
