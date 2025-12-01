@@ -1,0 +1,66 @@
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="blood" cx="45%" cy="35%">
+      <stop offset="0%" style="stop-color:#ff2a2a"/>
+      <stop offset="25%" style="stop-color:#e01a1a"/>
+      <stop offset="60%" style="stop-color:#a00000"/>
+      <stop offset="100%" style="stop-color:#5c0000"/>
+    </radialGradient>
+    
+    <radialGradient id="light" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.85"/>
+      <stop offset="35%" style="stop-color:#ffaaaa;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0"/>
+    </radialGradient>
+    
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+  
+  <rect width="600" height="800" fill="#0a0a0a"/>
+  
+  <!-- Main drop -->
+  <path d="M 300,120
+           C 285,135 275,160 268,190
+           C 262,215 259,245 258,275
+           C 257,320 260,365 267,408
+           C 272,442 280,475 290,506
+           C 297,530 306,552 316,573
+           C 323,589 330,604 337,618
+           C 342,629 347,639 351,649
+           C 357,663 362,677 365,692
+           C 368,710 368,729 364,747
+           C 360,765 351,781 338,792
+           C 322,806 301,812 280,810
+           C 258,808 238,797 224,780
+           C 212,766 205,748 202,729
+           C 200,714 201,698 204,683
+           C 207,667 212,651 218,636
+           C 227,614 238,593 250,573
+           C 265,548 282,524 298,500
+           C 310,481 321,461 330,440
+           C 338,421 344,401 349,380
+           C 353,361 355,341 355,321
+           C 355,290 352,259 345,229
+           C 340,205 332,182 322,161
+           C 315,145 307,130 300,120 Z"
+        fill="url(#blood)"
+        stroke="none"/>
+  
+  <!-- Highlight -->
+  <ellipse cx="280" cy="260" rx="55" ry="95" 
+           fill="url(#light)" 
+           transform="rotate(-12 280 260)"/>
+  
+  <ellipse cx="270" cy="220" rx="22" ry="35" 
+           fill="#ffffff" 
+           opacity="0.65"
+           transform="rotate(-15 270 220)"/>
+  
+  <!-- Soft glow -->
+  <ellipse cx="300" cy="400" rx="180" ry="320" 
+           fill="#cc0000" 
+           opacity="0.08"
+           filter="url(#soft)"/>
+</svg>
